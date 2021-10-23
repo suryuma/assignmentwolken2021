@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Auto Fill</title>
+    <style>
+        fieldset {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>AutoFill Form</h1>
+    <form>
+        <fieldset>
+            <legend><b>Permanent addresss</b>
+            </legend>
+            <label for="primaryaddress">
+            Address:</label>
+            <textarea name="Address" id="primaryaddress" cols="50" rows="10"></textarea>
+            <br />
+        </fieldset>
+        <input type="checkbox" id="same" name="same" onchange="addressFunction()" />
+        <label for="same">
+            checkbox.
+        </label>
+        <fieldset>
+            <legend><b>Local address</b></legend>
+            <label for="secondaryaddress">
+                Address:
+            </label>
+            <textarea name="Address" id="secondaryaddress" cols="50" rows="10" ></textarea>
+        <br />
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+    <script type="text/javascript" src="copy address.js"></script>
+</body>
+</html>
